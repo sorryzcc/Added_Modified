@@ -9,4 +9,5 @@ paths_with_prefix1 = df[df['Path'].str.startswith(prefix1, na=False)]['Path']
 
 paths_with_prefix2 = df[df['Path'].str.startswith(prefix2, na=False)]['Path']
 
-print(paths_with_prefix1.len)
+print(f"以 '{prefix1}' 开头的路径数量: {len(paths_with_prefix1)}")
+print(f"以 '{prefix2}' 开头的路径数量: {len(paths_with_prefix2)}")
